@@ -1,0 +1,33 @@
+{
+  "manifest_version": 5,
+  "name": "TextFocus",
+  "version": "1.0",
+  "description": "Enhance Your Reading Experience by Eliminating Distractions, Highlighting Key Text, and Simplifying Web Pages.",
+  "author": "Jonathan",
+  "permissions": ["scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background":{
+    "service_worker" : "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "./imgs/16.png",
+      "32": "./imgs/32.png",
+      "48": "./imgs/48.png",
+      "128": "./imgs/128.png"
+    }
+  },
+  "icons": {
+   "16": "./imgs/16.png",
+   "32": "./imgs/32.png",
+   "48": "./imgs/48.png",
+   "128": "./imgs/128.png"
+ }
+}

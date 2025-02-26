@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Jersey 20' rel='stylesheet'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+
+        <div id="splash-screen">
+            <img src="logo_white.png" alt="Splash Image">
+        </div>
+
+        <div class="container-fluid g-0">
+            <div class="row g-0">
+                <div class="col-12" id="header_container">
+                    <div class="row g-0">
+                        <div class="col-12" id="nav_container">
+                            <div class="row g-0">
+                                <div class="col-2" id="logo_container">
+                                    <p id="logo1">Pixel</p>
+                                    <p id="logo2">Pusher</p>
+                                </div>
+                                <div class="col-5" id="menu_container">
+                                    <div class="col-12" id="menu_cont">
+                                        <div class="row g-0">
+                                            <div class="col-2" id="nav">
+                                                <a href="#header_container" id="menu1" class="col-1">HOME</a>
+                                            </div>
+                                            <div class="col-2" id="nav">
+                                                <a href="#games_container" id="menu2" class="col-1">GAMES</a>
+                                            </div>
+                                            <div class="col-2" id="nav">
+                                                <a href="#faq_container" id="menu3" class="col-1">FAQs</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4" id="search_bar_container">
+                                    <div class="container h-100">
+                                        <div class="d-flex justify-content-center h-100">
+                                            <div id="search">
+                                                <input id="search_input" type="text" name="" placeholder="Search">
+                                                <a href="#" id="search_icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                                  </svg></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div id="login_container">
+                                        <button type="button"  class="dl_btn btn">
+                                            LOGIN
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" id="content_img_container">
+                            <div>
+                                <img src="Subtract.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div id="content_container">
+                                <div id="title_container"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1100">
+                                    <div id="title">Website To Download <span>Games</span></div>
+                                  </div>
+                                  <div id="sub_title_container"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1400">
+                                    <p id="sub_title">is simply dummy text of the printing and typesetting industry. Lorem Ipsum<br>has been the industry's standard dummy text ever since the 1500s, when an<br>unknown printer took a galley of type and scrambled it</p>
+                                  </div>
+                                  <div  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1600">
+                                    <a href="gui.exe" download>
+                                        <button type="button" id="btn_container">
+                                            Click Quest
+                                        </button>
+                                    </a>
+
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12" id="games_container">
+                    <div id="games_title_container">
+                        <p id="games_title">NEWEST GAME</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="col-12"  id="list_games_container">
+                            <div class="row g-0">
+                                <div class="col-3" id="game">
+                                    <img src="game_1.png" alt="">
+                                    <p id="game_title">Escape The Backrooms</p>
+                                    <div id="dl_btn_container">
+                                        <button type="button"  class="dl_btn btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                                            DOWNLOAD NOW
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-3" id="game">
+                                    <img src="game_2.png" alt="">
+                                    <p id="game_title">Forza Horizon 5</p>
+                                    <div id="dl_btn_container">
+                                        <button type="button"  class="dl_btn btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                                            DOWNLOAD NOW
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-3" id="game">
+                                    <img src="game_3.png" alt="">
+                                    <p id="game_title">Elden Ring</p>
+                                    <div id="dl_btn_container">
+                                        <button type="button"  class="dl_btn btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                                            DOWNLOAD NOW
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12"  id="list_games_container">
+                            <div class="row g-0">
+                                <div class="col-3" id="game">
+                                    <img src="game_4.png" alt="">
+                                    <p id="game_title">Genshin Impact</p>
+                                    <div id="dl_btn_container">
+                                        <button type="button"  class="dl_btn btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+                                            DOWNLOAD NOW
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-3" id="game">
+                                    <img src="game_5.png" alt="">
+                                    <p id="game_title">TCG Card Shop Simulator</p>
+                                    <div id="dl_btn_container">
+                                        <button type="button"  class="dl_btn btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop5">
+                                            DOWNLOAD NOW
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-3" id="game">
+                                    <img src="game_6.png" alt="">
+                                    <p id="game_title">Plants vs. Zombies GOTY Edition</p>
+                                    <div id="dl_btn_container">
+                                        <!-- Button trigger modal -->
+                                        <button type="button"  class=" dl_btn btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop6">
+                                            DOWNLOAD NOW
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="more_container">
+                            <div class="more_btn_container">
+                                <button type="button" id="more_btn">LOAD MORE</button>
+                            </div>
+                        </div>
+                        <div id="search_container">
+                            <div class="search_btn_container">
+                                <button type="button" id="search_btn" onclick="window.location.href='#search_input'">SEARCH MORE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12" id="faq_container">
+                    <div class="col-12">
+                        <div id="faq_main_title_container" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1100">
+                            <p id="faq_main_title">FAQs</p>
+                        </div>
+                    </div>
+                    <div class="col-12" id="faq_inner_container">
+                        <div id="faq_inner">
+                            <div class="col-6" id="faq_container1">
+                                <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1400">
+                                    <p class="faq_title">Is it safe to download from this website?</p>
+                                    <p class="faq_subtitle">Yes, absolutely! We prioritize your security by ensuring that all our game files are thoroughly verified and scanned for malware and viruses before being made available for download. Your safety is our top priority.</p>
+                                </div>
+                            </div>
+                            <div class="col-6" id="faq_container2">
+                                <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1400">
+                                    <p class="faq_title">Do I need to create an account to download games?</p>
+                                    <p class="faq_subtitle">While some features may be accessible without an account, creating one unlocks additional benefits like faster downloads, personalized recommendations, and access to exclusive content.</p>
+                                </div>
+                            </div>
+                            <div class="col-6" id="faq_container3">
+                                <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1400">
+                                    <p class="faq_title">Are the games on this website free to download?</p>
+                                    <p class="faq_subtitle">We offer a mix of free and premium games. Free games are available to download at no cost, while premium games may require a purchase or subscription. Be sure to check the game details for pricing and availability.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12" id="footer_container">
+                    <div id="about_title_container" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1100">
+                        <p id="about_title">ABOUT US</p>
+                    </div>
+                    <div id="about_subtitle_container" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1400">
+                        <p id="about_subtitle">Welcome to Pixel Pushers, your ultimate destination for downloading games safely and effortlessly. We're passionate gamers dedicated to bringing you a vast collection of titles, from action-packed adventures to indie gems, all verified for security and reliability. Our mission is to provide a seamless experience, with fast downloads, a user-friendly interface, and regular updates to keep you ahead of the game. Whether you're a casual player or a hardcore enthusiast, Pixel Pushers is here to fuel your gaming passion.</p>
+                    </div>
+                    <div class="col-12" id="social_container">
+                        <div class="row g-0">
+                            <div class="col-2" id="footer1">
+                                <div>
+                                    <img src="logo_blck.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-1" id="up">
+                                <div id="up_container">
+                                    <a href="#header_container" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1100"><img src="up.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content"  style="background-color: black;">
+                    <div class="modal-header"style="border:none !important;">
+                      <button type="button" data-bs-dismiss="modal" aria-label="Close" id="exit_btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                      </svg></button>
+                    </div>
+                    <div class="modal-body" id="modal_container" style="background-color: black; border:none !important;">
+                        <div class="container-fluid g-0">
+                            <div class="row g-0" id="game_chosen">
+                                <img src="back.jpg" alt="">
+                            </div>
+                            <div class="col-12" id="game_title_container">
+                                <div>
+                                    <div id="gm_title_container">
+                                        <p id="gm_title">Escape The Backrooms</p>
+                                    </div>
+                                </div>
+                                <div id="gm_subtitle_container">
+                                    <img src="border.png" alt="" id="border_img">
+                                    <p id="gm_subtitle">A spine-chilling co-op horror experience where you and your friends navigate the endless, eerie corridors of the Backrooms to survive.</p>
+                                </div>
+                                <div id="dl_btn_container">
+                                    <button type="button"  class="dl_btn">DOWNLOAD NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content"  style="background-color: black;">
+                    <div class="modal-header"style="border:none !important;">
+                      <button type="button" data-bs-dismiss="modal" aria-label="Close" id="exit_btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                      </svg></button>
+                    </div>
+                    <div class="modal-body" id="modal_container" style="background-color: black; border:none !important;">
+                        <div class="container-fluid g-0">
+                            <div class="row g-0" id="game_chosen">
+                                <img src="forza.jpg" alt="">
+                            </div>
+                            <div class="col-12" id="game_title_container">
+                                <div>
+                                    <div id="gm_title_container">
+                                        <p id="gm_title">Forza Horizon 5</p>
+                                    </div>
+                                </div>
+                                <div id="gm_subtitle_container">
+                                    <img src="border.png" alt="" id="border_img">
+                                    <p id="gm_subtitle"> An open-world racing masterpiece set in breathtaking Mexico, offering stunning visuals, dynamic weather, and exhilarating gameplay.</p>
+                                </div>
+                                <div id="dl_btn_container">
+                                    <button type="button"  class="dl_btn">DOWNLOAD NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content"  style="background-color: black;">
+                    <div class="modal-header"style="border:none !important;">
+                      <button type="button" data-bs-dismiss="modal" aria-label="Close" id="exit_btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                      </svg></button>
+                    </div>
+                    <div class="modal-body" id="modal_container" style="background-color: black; border:none !important;">
+                        <div class="container-fluid g-0">
+                            <div class="row g-0" id="game_chosen">
+                                <img src="game.png" alt="">
+                            </div>
+                            <div class="col-12" id="game_title_container">
+                                <div>
+                                    <div id="gm_title_container">
+                                        <p id="gm_title">Elden Ring</p>
+                                    </div>
+                                </div>
+                                <div id="gm_subtitle_container">
+                                    <img src="border.png" alt="" id="border_img">
+                                    <p id="gm_subtitle">A dark fantasy action RPG created by FromSoftware and George R.R. Martin, where players explore a vast open world filled with challenging foes and epic lore.</p>
+                                </div>
+                                <div id="dl_btn_container">
+                                    <button type="button"  class="dl_btn">DOWNLOAD NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content"  style="background-color: black;">
+                    <div class="modal-header"style="border:none !important;">
+                      <button type="button" data-bs-dismiss="modal" aria-label="Close" id="exit_btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                      </svg></button>
+                    </div>
+                    <div class="modal-body" id="modal_container" style="background-color: black; border:none !important;">
+                        <div class="container-fluid g-0">
+                            <div class="row g-0" id="game_chosen">
+                                <img src="gi.jpg" alt="">
+                            </div>
+                            <div class="col-12" id="game_title_container">
+                                <div>
+                                    <div id="gm_title_container">
+                                        <p id="gm_title">Genshin Impact</p>
+                                    </div>
+                                </div>
+                                <div id="gm_subtitle_container">
+                                    <img src="border.png" alt="" id="border_img">
+                                    <p id="gm_subtitle"> A visually stunning action RPG with an expansive open world, elemental combat, and a captivating storyline set in the land of Teyvat.</p>
+                                </div>
+                                <div id="dl_btn_container">
+                                    <button type="button"  class="dl_btn">DOWNLOAD NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content"  style="background-color: black;">
+                    <div class="modal-header"style="border:none !important;">
+                      <button type="button" data-bs-dismiss="modal" aria-label="Close" id="exit_btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                      </svg></button>
+                    </div>
+                    <div class="modal-body" id="modal_container" style="background-color: black; border:none !important;">
+                        <div class="container-fluid g-0">
+                            <div class="row g-0" id="game_chosen">
+                                <img src="tcg.jpg" alt="">
+                            </div>
+                            <div class="col-12" id="game_title_container">
+                                <div>
+                                    <div id="gm_title_container">
+                                        <p id="gm_title">TCG Card Shop Simulator</p>
+                                    </div>
+                                </div>
+                                <div id="gm_subtitle_container">
+                                    <img src="border.png" alt="" id="border_img">
+                                    <p id="gm_subtitle">Manage your own trading card shop, buying, selling, and building a collection while engaging with passionate card game fans.</p>
+                                </div>
+                                <div id="dl_btn_container">
+                                    <button type="button"  class="dl_btn">DOWNLOAD NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content"  style="background-color: black;">
+                    <div class="modal-header"style="border:none !important;">
+                      <button type="button" data-bs-dismiss="modal" aria-label="Close" id="exit_btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                      </svg></button>
+                    </div>
+                    <div class="modal-body" id="modal_container" style="background-color: black; border:none !important;">
+                        <div class="container-fluid g-0">
+                            <div class="row g-0" id="game_chosen">
+                                <img src="pvp.jpg" alt="">
+                            </div>
+                            <div class="col-12" id="game_title_container">
+                                <div>
+                                    <div id="gm_title_container">
+                                        <p id="gm_title">Plants vs. Zombies GOTY Edition</p>
+                                    </div>
+                                </div>
+                                <div id="gm_subtitle_container">
+                                    <img src="border.png" alt="" id="border_img">
+                                    <p id="gm_subtitle">A quirky and addictive tower defense game where you use a variety of plants to fend off waves of goofy yet dangerous zombies.</p>
+                                </div>
+                                <div id="dl_btn_container">
+                                    <button type="button"  class="dl_btn">DOWNLOAD NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+
+
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOM fully loaded and parsed.");
+
+    AOS.init();
+
+    const splashScreen = document.getElementById("splash-screen");
+
+      if (sessionStorage.getItem("splashShown") === "true") {
+        splashScreen.style.display = "none";
+      } else {
+        setTimeout(() => {
+          if (splashScreen) {
+            splashScreen.classList.add("fade-out");
+            setTimeout(() => {
+                splashScreen.style.display = "none";
+                sessionStorage.setItem("splashShown", "true");
+            }, 1000);
+          }
+        }, 2000);
+      }
+    });
+    </script>
+</html>

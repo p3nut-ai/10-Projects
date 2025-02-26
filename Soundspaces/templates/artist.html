@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://fonts.cdnfonts.com/css/jsmath-cmbx10" rel="stylesheet">
+        <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='artist.css') }}">
+    </head>
+    </head>
+    <body>
+
+        <div class="container-fluid g-0">
+            <div class="row g-0">
+                <div class="col-12" id="nav_container">
+                    <div class="row g-0">
+                        <div class="col-2" id="logo_main_container">
+                            <div id="logo_container">
+                                <h1 id="logo1">Sound</h1>
+                                <h1 id="logo2">Space</h1>
+                            </div>
+                        </div>
+                        <div class="col-8"id="searchbar_main_container">
+                            <div id="search">
+                                <form action="/search_artist" method="get">
+                                <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+                                <input id="search_input" name="artist_name" type="search" placeholder="SEARCH YOUR ARTIST" required>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12" id="menu_container">
+                    <div class="row g-0">
+                        <div class="col-7" id="menu">
+                            <div class="row g-0">
+                                <div class="col-2">
+                                    <button type="button"  id="home_btn">
+                                        Home
+                                    </button>
+                                </div>
+                                <div class="col-2">
+                                    <button type="button"  id="artist_btn">
+                                        Artist
+                                    </button>
+                                </div>
+                                <div class="col-2">
+                                    <button type="button"  id="wrapped_btn">
+                                    <a href="{{ url_for('wrapped')}}">Wrapped</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12" id="flw_artist_container">
+                    <div class="row g-0">
+                        <div class="col-1" id="following_artist">
+                            <div id="artist_container">
+                                <p id="flw_art">Following Artist</p>
+                            </div>
+                            {% for artist in followed_artists %}
+                            <div class="artist">
+                                <img src="{{ artist.image or 'default_artist.png' }}" alt="{{ artist.name }}">
+                                <p class="artist_name">{{ artist.name }}</p>
+                            </div>
+                            {% endfor %}
+                            <div>
+                                <a href="#" id="see_more">See More</a>
+                            </div>
+                        </div>
+
+                        <div class="col-9" id="srch_artist">
+                            <div class="col-12">
+                                <div class="row g-0">
+                                  <div class="col-12" id="artist_dets">
+                                  {% if artist_image %}
+                                      <img src="{{ artist_image }}" alt="{{ artist_name }}">
+                                      <div class="overlay" id="srch_artist_container">
+                                        {% endif %}
+                                          <h1 id="srch_artist_name">{{ artist_name }}</h1>
+                                      </div>
+                                  {% if monthly_listeners %}
+                                      <p id="listeners">{{ monthly_listeners }}</p>
+                                  {% endif %}
+                                  <div>
+                                      <form action="{{ url_for('artist_track') }}" method="post">
+                                          <input type="hidden" name="artist_id" value="{{ artist_id }}">
+                                          <button type="button" id="follow_btn">Follow</button>
+                                      </form>
+                                  </div>
+                              </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12" id="top_song_container">
+                                <div class="row g-0">
+                                    <div class="col-12">
+                                        <div id="top_song_title_cont">
+                                            <p id="top_song_title">Top Popular Song</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12" id="all_song_container">
+                                        <div class="row g-0">
+                                            <div class="col-8 song_container">
+                                              {% for track in tracks %}
+                                                <div class="row g-0">
+                                                    <div class="col-1">
+                                                        <p class="song_details">{{ loop.index }}</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <p class="song_details">{{ track["title"] }}</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p class="song_details">{{ track["duration"] }}</p>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <p class="song_details">{{ track["plays"] }}</p>
+                                                    </div>
+                                                </div>
+                                                {% endfor %}
+                                            </div>
+
+                                            <div class="col-12" id="see_more_container">
+                                                <a href="#" id="see_more_song">See More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row g-0">
+                        <div class="col-10" id="about_container">
+                            <div class="row g-0">
+                                <div class="col-12" id="about">
+                                    <div class="row g-0">
+                                        <div class="col-8" id="abt_title_cont">
+                                            <h1 id="abt_title">ABOUT</h1>
+                                            {% if about %}
+                                            <p id="abt_subtitle">{{ about }}</p>
+                                            {% endif %}
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>

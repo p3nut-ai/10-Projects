@@ -1,0 +1,487 @@
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black; /* Equivalent to bg-gray-950 */
+    color: white;
+    z-index: 50;
+  }
+
+  #splash-screen img {
+    animation: fadeUp 1s ease-in-out;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-out {
+    animation: fadeOut 1s forwards;
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+body{
+    background-color: black;
+}
+
+#header_container{
+    margin-top: 10px;
+}
+
+#logo_container p{
+    padding-left: 91px;
+    font-size: 36px;
+    font-family: "Jersey 20";
+}
+
+#logo1{
+    color: white;
+}
+
+#logo2{
+    color: #C22828;
+    margin-top: -37px;
+}
+
+#menu_container{
+    margin-top: 24px;
+}
+
+#menu_cont{
+    margin-left: 456px;
+}
+
+#menu_container a{
+    font-size: 20px;
+    font-family: "Jersey 20";
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+#nav a:hover{
+  border-bottom: 1px solid red;
+  width: 20px;
+}
+
+#search{
+    margin-left: 160px;
+    margin-top: 16px;
+    height: 50px;
+    background-color: black;
+    border-radius: 40px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    }
+
+    #search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    margin-top: -7px;
+    }
+
+    #search #search_input{
+    padding: 0 10px;
+    width: 240px;
+    caret-color:white;
+    transition: width 0.4s linear;
+    }
+
+    #search_icon{
+    height: 30px;
+    width: 30px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: black;
+    background-color: white;
+    }
+
+a:link{
+    text-decoration:none;
+}
+
+#login_container button{
+    margin-top: 16px;
+    background-color: white;
+    width: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 30px;
+    margin-left: -40px;
+    color: black;
+    text-decoration: none;
+    font-family: "Jersey 20";
+}
+
+
+#login_container button:hover{
+    background-color: #C22828;
+    color: white;
+  }
+
+#content_img_container{
+    margin-top: 8px;
+}
+
+#content_img_container img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+#content_container{
+    margin-top: -71px;
+    margin-left: 127px;
+}
+
+#title{
+    font-size: 85px;
+    color: white;
+    font-family: "Jersey 20";
+}
+#title span{
+    color: #DF6868;
+}
+  #sub_title{
+    font-size:21px;
+    color: white;
+  }
+
+  #sub_title_container{
+    /* margin-left: 72px; */
+    margin-top: 8px;
+  }
+
+  #btn_container{
+    background-color: #C22828;
+    width: 280px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 16px;
+    margin-top: 64px;
+    /* margin-left: 328px; */
+    text-align: center;
+    font-size: 36px;
+    text-decoration: none;
+    color: white;
+    font-family: "Jersey 20";
+    border: none;
+  }
+
+  #btn_container:hover{
+    background-color: white;
+    color: #C22828;
+  }
+
+#list_games_container{
+    margin-top: 152px;
+}
+
+#games_container{
+    margin-top: 220px;
+}
+
+#games_title{
+    font-size: 64px;
+    color: white;
+    font-family: "Jersey 20";
+    text-align: center;
+}
+
+#game{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#game img{
+    width: 100%;
+    height: 344px;
+}
+
+#game_title{
+    font-size: 32px;
+    color: white;
+    font-family: "Jersey 20";
+    text-align: center;
+    margin-top: 20px;
+}
+
+#dl_btn_container{
+    text-align: center;
+}
+
+.modal-body{
+  padding: 0px !important;
+}
+
+.dl_btn{
+  height: 45px !important;
+  background-color: white;
+  width: 181px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 16px;
+  margin-top: 20px;
+  font-size: 17px;
+  text-decoration: none;
+  color: black;
+  font-family: "Jersey 20";
+  border: none;
+}
+
+.dl_btn:hover{
+  background-color: #C22828;
+  color: white;
+  border: none;
+}
+
+#more_container{
+    margin-top: 152px;
+}
+
+
+#more_btn{
+    margin:auto;
+    display:block;
+    background-color: white;
+    width: 240px;
+    border-radius: 24px;
+    margin-top: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    font-family: "Jersey 20";
+    border: none;
+}
+
+#search_container{
+    margin-top: 152px;
+}
+
+
+#search_btn{
+    margin:auto;
+    display:block;
+    background-color: black;
+    width: 1000px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    font-family: "Jersey 20";
+    border: 1px solid white;
+}
+
+#search_btn:hover{
+    background-color:  white;
+    color: black;
+}
+
+#faq_container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 213px;
+}
+
+#faq_inner{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+#faq_main_title{
+    font-size: 64px;
+    color: white;
+    font-family: "Jersey 20";
+    text-align: center;
+}
+
+.faq_title{
+    font-size: 40px;
+    color: white;
+    font-family: "Jersey 20";
+}
+
+.faq_subtitle{
+    font-size: 16px;
+    color: white;
+    /* font-family: "Jersey 20"; */
+}
+
+#faq_container2{
+    margin-left: 668px;
+}
+
+#footer_container{
+    margin-top: 220px;
+    background-image: linear-gradient(#000000, #8f8f8f);
+    height: 627px;
+}
+
+#about_title{
+    font-size: 64px;
+    color: white;
+    font-family: "Jersey 20";
+    text-align: center;
+}
+
+#about_subtitle_container{
+    margin-top: 60px;
+}
+
+#about_subtitle{
+    font-size: 24px;
+    color: white;
+    font-family: "Jersey 20";
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+#social_container{
+    margin-top: 213px;
+}
+
+
+#footer1 img{
+    width: 100%;
+}
+
+#footer1{
+    margin-left: 788px;
+    margin-right: auto;
+}
+
+#up_container{
+    margin-top: -40px;
+}
+
+#up_container img{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+#game_chosen img{
+    height: 100%;
+    object-fit:cover;
+}
+
+#gm_title_container{
+    font-size: 32px;
+    color: white;
+    font-family: "Jersey 20";
+    text-align: center;
+}
+
+#gm_title{
+    margin-bottom: -16px;
+}
+
+#gm_subtitle_container{
+    margin-top: 18px;
+}
+
+#gm_subtitle_container img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#gm_subtitle{
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: -100px;
+}
+
+#dl_btn_container{
+    margin-top: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#dl_btn{
+    background-color: white;
+    width: 116px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 16px;
+    margin-top: 20px;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    font-family: "Jersey 20";
+    border: none;
+}
+
+#sys_req_container{
+    margin-top: 120px;
+}
+
+#sys_req{
+    color: white;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+
+
+#modal_container{
+    border: none;
+    background-color: #000000;
+}
+
+
+#exit_btn{
+    background-color: black;
+    color: white;
+    border: none;
+    margin-left: auto;
+    margin-right: 30px;
+}

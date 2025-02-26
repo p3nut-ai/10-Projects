@@ -1,0 +1,63 @@
+body{
+    background-color: black;
+}
+
+#game_img{
+    width: 100%;
+}
+
+#title_container{
+    font-size: 64px;
+    color: white;
+    font-family: "Jersey 20";
+    text-align: center;
+}
+
+#title{
+    margin-bottom: -20px;
+}
+
+#border_img{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#subtitle{
+    font-size: 24px;
+    color: white;
+    font-family: "Alegreya";
+    text-align: center;
+    margin-top: -217px;
+}
+
+#dl_btn_container{
+    margin-top: 80px;
+    text-align: center;
+}
+
+#dl_btn{
+    background-color: white;
+    width: 164px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 16px;
+    margin-top: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-family: "Jersey 20";
+    border: none;
+}
+
+#sys_req_container{
+    margin-top: 350px;
+}
+
+#sys_req{
+    color: white;
+    font-family: "Jersey 20";
+    font-size: 20px;
+    margin-left: 300px;
+}
